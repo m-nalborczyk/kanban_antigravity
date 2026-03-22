@@ -1,0 +1,39 @@
+.boardContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.boardHeader {
+  padding: 1.5rem 2rem;
+  background-color: var(--color-blue-primary);
+  color: #ffffff;
+  box-shadow: var(--shadow-sm);
+  z-index: 10;
+}
+
+.boardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.boardSubtitle {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin: 0.25rem 0 0 0;
+}
+
+.columnsWrapper {
+  flex-grow: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1.5rem 2rem;
+}
+
+.columnsList {
+  display: flex;
+  gap: 1.5rem;
+  height: 100%;
+}
