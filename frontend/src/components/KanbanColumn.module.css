@@ -1,0 +1,153 @@
+.columnContainer {
+  background-color: var(--color-background-column);
+  width: 280px;
+  min-width: 280px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  padding: 0.75rem;
+}
+
+.columnHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--transition-fast);
+}
+
+.columnHeader:hover {
+  border-bottom: 2px solid var(--color-accent-yellow);
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-dark-navy);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.titleInput {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--font-sans);
+  color: var(--color-dark-navy);
+  background-color: #ffffff;
+  border: 2px solid var(--color-blue-primary);
+  border-radius: var(--radius-sm);
+  padding: 0.25rem;
+  width: 100%;
+  outline: none;
+}
+
+.badge {
+  background-color: var(--color-blue-primary);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 12px;
+}
+
+.cardsContainer {
+  flex-grow: 1;
+  overflow-y: auto;
+  min-height: 150px;
+  padding-top: 0.75rem;
+  /* Scrollbar styles */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray-text) transparent;
+}
+
+.cardsContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cardsContainer::-webkit-scrollbar-thumb {
+  background-color: var(--color-gray-text);
+  border-radius: 10px;
+}
+
+.addCardButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  color: var(--color-gray-text);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.addCardButton:hover {
+  background-color: rgba(9, 30, 66, 0.08);
+  color: var(--color-dark-navy);
+}
+
+.addCardForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  border-top: 1px solid rgba(9, 30, 66, 0.1);
+}
+
+.inputField, .textareaField {
+  font-family: inherit;
+  border: 1px solid var(--color-blue-primary);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-dark-navy);
+  outline: none;
+  width: 100%;
+}
+
+.textareaField {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.formActions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.submitBtn {
+  background-color: var(--color-blue-primary);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: background-color var(--transition-fast);
+}
+
+.submitBtn:hover {
+  background-color: #1783b6;
+}
+
+.cancelBtn {
+  color: var(--color-gray-text);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.cancelBtn:hover {
+  background-color: rgba(9, 30, 66, 0.08);
+  color: var(--color-dark-navy);
+}
